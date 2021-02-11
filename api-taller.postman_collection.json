@@ -1,0 +1,696 @@
+{
+	"info": {
+		"_postman_id": "05e335a6-792c-4c89-beef-9a8183a5aeb5",
+		"name": "api-taller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": \"9\",\r\n    \"nombre\":\"Rosa\",\r\n    \"apellido\": \"Labarca\",\r\n    \"email\":\"rosa@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-CLIENTE-LIMIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente/all/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente",
+						"all",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-CLIENTE-BY-ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente/c5eff8e9-23ad-4580-87bd-ff422bafe197",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente",
+						"c5eff8e9-23ad-4580-87bd-ff422bafe197"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR-CLIENTE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"id\": \"a7caaa14-dcb6-4979-a185-8d89c378e316\",\r\n            \"identificacion\": \"100\",\r\n            \"nombre\": \"Jose Jesus1\",\r\n            \"apellido\": \"Pirela Fuenmayor\",\r\n            \"email\": \"jjpirela93@gmail.co\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-CLIENTE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente/0386a770-d9a0-44ac-b58e-4010edc49344",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente",
+						"0386a770-d9a0-44ac-b58e-4010edc49344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-AUTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"NISSAN\",\r\n    \"modelo\":\"SENTRA\",\r\n    \"year\": \"2000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/auto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"auto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-AUTO-LIMIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"NISSAN\",\r\n    \"modelo\":\"SENTRA\",\r\n    \"year\": \"2000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/auto/all/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"auto",
+						"all",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-AUTO-BY-ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/auto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"auto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR-AUTO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n            \"id\": \"c5c3f46c-69b1-4ccb-9722-c67c302a86f5\",\r\n            \"marca\": \"NISSAN1\",\r\n            \"modelo\": \"SENTRA1\",\r\n            \"year\": \"2001\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/auto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"auto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-AUTO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/auto/c5c3f46c-69b1-4ccb-9722-c67c302a86f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"auto",
+						"c5c3f46c-69b1-4ccb-9722-c67c302a86f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-REPARACION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": \"a7caaa14-dcb6-4979-a185-8d89c378e316\",\r\n    \"idAuto\":\"d119c0ba-c63c-42eb-8909-607981b29a79\",\r\n    \"idestado\": \"101\",\r\n    \"reparacion\": \"Cambio de faros a luces led\",\r\n    \"observacion\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-REPARACION-LIMIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion/all/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion",
+						"all",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-REPARACION-BY-ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion/2b0bf50d-f1a8-4ccc-93fa-b2e6068e24ae",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion",
+						"2b0bf50d-f1a8-4ccc-93fa-b2e6068e24ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-REPARACION-BY-ID-AUTO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion/auto/d119c0ba-c63c-42eb-8909-607981b29a79",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion",
+						"auto",
+						"d119c0ba-c63c-42eb-8909-607981b29a79"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-REPARACION-ORDENADAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion/ordenadas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion",
+						"ordenadas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR-REPARACION",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4f53b188-6e80-43b1-b737-0f5b13a5f898\",\r\n    \"idCliente\": \"1\",\r\n    \"idAuto\": \"1\",\r\n    \"reparacion\": \"Puerta pilota - pintura2\",\r\n    \"observacion\": \"color rojo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-REPARACION",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/reparacion/4f53b188-6e80-43b1-b737-0f5b13a5f898",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"reparacion",
+						"4f53b188-6e80-43b1-b737-0f5b13a5f898"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-CLIENTE-AUTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": \"2\",\r\n    \"idAuto\":\"2\",\r\n    \"color\": \"Azul\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente-auto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente-auto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-CLIENTE-AUTO-LIMIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente-auto/all/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente-auto",
+						"all",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA-CLIENTE-AUTO-BY-ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente-auto/a96277fe-0777-435c-89d0-965ea97417e2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente-auto",
+						"a96277fe-0777-435c-89d0-965ea97417e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR-CLIENTE-AUTO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a96277fe-0777-435c-89d0-965ea97417e2\",\r\n    \"idCliente\": \"1\",\r\n    \"idAuto\": \"1\",\r\n    \"color\": \"Rojo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente-auto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente-auto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-CLIENTE-AUTO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/public/cliente-auto/56a250ff-5565-4264-b157-3ef39356b978",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"public",
+						"cliente-auto",
+						"56a250ff-5565-4264-b157-3ef39356b978"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
